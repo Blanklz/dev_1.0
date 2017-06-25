@@ -1,0 +1,10 @@
+function! Fun(n)
+    if(a:n==1)
+        return 1
+    elseif(a:n==0)
+        return 1
+    else
+       return a:n*Fun(a:n-1)
+     endif
+endfunction
+echo Fun(5)
